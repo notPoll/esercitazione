@@ -1,0 +1,21 @@
+body {
+    background-color: white;
+}
+
+.grid-container {
+    margin: 0 auto;
+    width: 800px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.circle {
+    background-color: grey;
+    border-radius: 50%;
+}
+.grid-item-black {
+    background-color: black;
+    margin: absolute;
+    width: 100px;
+    height: auto;
+}
