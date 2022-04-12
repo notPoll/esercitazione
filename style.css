@@ -26,6 +26,8 @@ body {
 }
 .circle:active {
 transform: translateY(105px);
+}
+.circle:hover {
 border: 3px solid blue;
 }
 .grid-item-black {
