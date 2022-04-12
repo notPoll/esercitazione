@@ -4,26 +4,28 @@ body {
 .grid-container {
     margin: 0 auto;
     width: 400px;
-    height: 100px;
+    height: 200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .grid-item {
-
+    
     display: grid;
     width: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .circle {
+    margin: 0 auto;
     background-color: grey;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: grid;
+    width:  80%;
+    height: 80%;
+    
     transition: transform 1s ease-in-out;
+    
 }
 .circle:active {
-transform: translateY(100px);
+transform: translateY(105px);
 border: 3px solid blue;
 }
 .grid-item-black {
@@ -35,6 +37,12 @@ border: 3px solid blue;
 }
 .grid-item-white {
     background-color: white;
+    margin: grid;
+    width: 100px;
+    height: 100px;
+}
+#grid-item-blue {
+    background-color: blue;
     margin: grid;
     width: 100px;
     height: 100px;
