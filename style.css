@@ -4,49 +4,37 @@ body {
 .grid-container {
     margin: 0 auto;
     width: 400px;
-    height: 400px;
+    height: 100px;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-item {
+
+    display: grid;
+    width: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .circle {
     background-color: grey;
     border-radius: 50%;
-    border: 3px solid blue;
     width: 100px;
     height: 100px;
     margin: grid;
-    
     transition: transform 1s ease-in-out;
 }
 .circle:active {
-transform: translateY(10vw);
+transform: translateY(100px);
+border: 3px solid blue;
 }
-#grid-item-black {
+.grid-item-black {
     background-color: black;
     margin: grid;
     width: 100px;
     height: 100px;
+
 }
-#grid-item-blue {
-    background-color: blue;
-    margin: grid;
-    width: 100px;
-    height: 100px;
-}
-#grid-item-black2 {
-    background-color: black;
-    margin: grid;
-    width: 100px;
-    height: 100px;
-}
-#grid-item-black3 {
-    background-color: black;
-    margin: grid;
-    width: 100px;
-    height: 100px;
-}
-#grid-item-black4 {
-    background-color: black;
+.grid-item-white {
+    background-color: white;
     margin: grid;
     width: 100px;
     height: 100px;
