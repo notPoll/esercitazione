@@ -3,15 +3,10 @@ body {
 }
 .grid-container {
     margin: 0 auto;
-    width: 800px;
+    width: 400px;
     height: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 2px;
-    column-gap: 2px;
-}
-.circle-active {
-    transform: translateY();
 }
 .circle {
     background-color: grey;
@@ -20,6 +15,11 @@ body {
     width: 100px;
     height: 100px;
     margin: grid;
+    
+    transition: transform 1s ease-in-out;
+}
+.circle:active {
+transform: translateY(10vw);
 }
 #grid-item-black {
     background-color: black;
